@@ -1,0 +1,1308 @@
+{% layout none %}
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>ÉLEVE | Coleção Cápsula 01 — Pré-Venda Oficial</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'eleve-bone': '#FAF8F5',
+                        'eleve-warm': '#F5F0EB',
+                        'eleve-sand': '#EAE2D8',
+                        'eleve-border': '#E0D6C8',
+                        'color-deep-black': '#171514',
+                        'color-mocha': '#5C3D2E',
+                        'color-mocha-soft': '#F3ECE7',
+                        'color-dusty-rose': '#CFA7A3',
+                        'color-dusty-rose-soft': '#F8ECEB',
+                        'color-charcoal': '#242220',
+                        'color-whatsapp': '#25D366'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        .editorial-shadow {
+            box-shadow: 0 16px 40px -15px rgba(23, 21, 20, 0.08);
+        }
+        .faq-body {
+            transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .grain-overlay {
+            background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-eleve-bone text-color-charcoal font-sans antialiased selection:bg-color-mocha selection:text-white grain-overlay pb-20 md:pb-0">
+
+    <!-- TOP ANNOUNCEMENT BAR (MOBILE COMPACT) -->
+    <aside class="bg-color-deep-black text-eleve-bone py-2 px-3 text-[9px] sm:text-[11px] tracking-[0.16em] uppercase text-center flex items-center justify-center gap-1.5 font-medium border-b border-white/5">
+        <span class="w-1.5 h-1.5 rounded-full bg-color-mocha animate-ping shrink-0"></span>
+        <span class="truncate">PRÉ-VENDA DROP 01 • + 1 SCRUNCHIE DE BRINDE • ENTREGA ~25 DIAS</span>
+    </aside>
+
+    <!-- CABEÇALHO RESPONSIVO -->
+    <header class="sticky top-0 z-40 bg-eleve-bone/95 backdrop-blur-md border-b border-eleve-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 h-16 sm:h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl sm:text-3xl md:text-4xl tracking-[0.22em] uppercase font-light text-color-deep-black">
+                ÉLEVE<span class="text-color-mocha">.</span>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 text-[11px] uppercase tracking-[0.18em] font-semibold text-neutral-500">
+                <a href="#conjunto" class="hover:text-color-deep-black transition-colors">O Conjunto</a>
+                <a href="#manifesto" class="hover:text-color-deep-black transition-colors">A Mulher Éleve</a>
+                <a href="#video-piloto" class="hover:text-color-deep-black transition-colors">Em Movimento</a>
+                <a href="#engenharia" class="hover:text-color-deep-black transition-colors">Engenharia Têxtil</a>
+                <a href="#prazos" class="hover:text-color-deep-black transition-colors">Prazos</a>
+                <a href="#reserva" class="hover:text-color-deep-black transition-colors">Pré-Venda</a>
+            </nav>
+
+            <div class="flex items-center gap-2 sm:gap-3">
+                <button type="button" onclick="openSizeGuide()" class="text-[10px] sm:text-[11px] uppercase tracking-wider font-semibold text-neutral-600 hover:text-color-deep-black flex items-center gap-1 transition px-2.5 py-1.5 rounded-lg border border-eleve-border sm:border-transparent">
+                    <i class="ph ph-ruler text-sm"></i>
+                    <span>Medidas (P, M, G)</span>
+                </button>
+                <a href="#reserva" class="hidden sm:flex bg-color-deep-black text-white hover:bg-color-mocha transition-all text-[11px] uppercase tracking-[0.16em] font-semibold py-2.5 px-5 rounded-full items-center gap-1.5 shadow-sm">
+                    <span>Garantir Peça</span>
+                    <i class="ph ph-arrow-down-right font-bold text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION OTIMIZADA PARA MOBILE -->
+    <section id="conjunto" class="pt-6 pb-12 sm:py-16 border-b border-eleve-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+                
+                <!-- Coluna de Apresentação (Mobile First) -->
+                <div class="lg:col-span-6 flex flex-col justify-center order-2 lg:order-1">
+                    
+                    <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-color-mocha-soft text-color-mocha text-[9px] sm:text-[10px] tracking-[0.16em] uppercase font-bold border border-color-mocha/20">
+                            <i class="ph-fill ph-sparkle"></i>
+                            Drop 01 Oficial
+                        </span>
+                        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-color-dusty-rose-soft text-color-charcoal text-[9px] sm:text-[10px] tracking-wider uppercase font-bold border border-color-dusty-rose/30">
+                            <i class="ph ph-gift text-color-mocha"></i>
+                            Scrunchie de Brinde
+                        </span>
+                    </div>
+
+                    <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[4rem] leading-[1.08] text-color-deep-black mb-3.5 font-light">
+                        A elegância de quem <br><span class="italic font-normal">vive em movimento.</span>
+                    </h1>
+
+                    <p class="text-neutral-600 text-xs sm:text-sm md:text-base leading-relaxed mb-5 font-light">
+                        Design funcional com <strong>Top Scoop-Neck sem bojo</strong> (sustentação natural em tecido duplo denso de 280g/m²) e <strong>Shorts de Cós Anatômico</strong> com bolso lateral invisível para smartphone.
+                    </p>
+
+                    <!-- Barra de Estoque Escasso -->
+                    <div class="bg-eleve-warm/80 p-3 sm:p-4 rounded-2xl border border-eleve-border mb-5 max-w-lg">
+                        <div class="flex items-center justify-between text-[11px] font-semibold mb-1.5">
+                            <span class="text-color-deep-black flex items-center gap-1.5">
+                                <span class="w-2 h-2 rounded-full bg-amber-600 animate-pulse"></span>
+                                Lote de Fabricação Internacional
+                            </span>
+                            <span class="text-color-mocha font-bold">81% Reservado</span>
+                        </div>
+                        <div class="w-full bg-white h-2 rounded-full overflow-hidden border border-eleve-border/60">
+                            <div class="bg-gradient-to-r from-color-mocha to-color-deep-black h-full rounded-full" style="width: 81%;"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-2 text-[10px] text-neutral-500 font-light">
+                            <span>~15 dias confecção + trânsito (~25 dias totais)</span>
+                            <span class="font-medium text-color-deep-black">R$ 97,80 unitário</span>
+                        </div>
+                    </div>
+
+                    <!-- Seletor Rápido de Cores (Mobile Touch Amigável) -->
+                    <div class="bg-white/95 p-3.5 sm:p-4 rounded-2xl border border-eleve-border mb-6 max-w-lg shadow-sm">
+                        <div class="flex items-center justify-between mb-2.5">
+                            <span class="text-[10px] uppercase tracking-widest font-bold text-neutral-500">
+                                Cor Ativa: <span id="hero-color-label" class="text-color-deep-black font-semibold">Preto Profundo</span>
+                            </span>
+                            <span id="hero-color-role" class="text-[9px] uppercase tracking-wider text-neutral-400 font-medium">Warm Black</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-2">
+                            <button type="button" onclick="selectColor('black')" id="swatch-btn-black" class="flex flex-col items-start p-2 sm:p-2.5 rounded-xl border-2 border-color-deep-black bg-eleve-bone transition text-left">
+                                <div class="flex items-center gap-1.5 mb-0.5">
+                                    <span class="w-3.5 h-3.5 rounded-full bg-[#171514] shadow-inner border border-white/20"></span>
+                                    <span class="text-[11px] font-bold text-color-deep-black">Preto</span>
+                                </div>
+                                <span class="text-[9px] text-neutral-400">Profundo</span>
+                            </button>
+
+                            <button type="button" onclick="selectColor('mocha')" id="swatch-btn-mocha" class="flex flex-col items-start p-2 sm:p-2.5 rounded-xl border border-eleve-border bg-white hover:border-neutral-400 transition text-left">
+                                <div class="flex items-center gap-1.5 mb-0.5">
+                                    <span class="w-3.5 h-3.5 rounded-full bg-[#5C3D2E] shadow-inner border border-black/10"></span>
+                                    <span class="text-[11px] font-bold text-color-deep-black">Mocha</span>
+                                </div>
+                                <span class="text-[9px] text-neutral-400">Marrom</span>
+                            </button>
+
+                            <button type="button" onclick="selectColor('rose')" id="swatch-btn-rose" class="flex flex-col items-start p-2 sm:p-2.5 rounded-xl border border-eleve-border bg-white hover:border-neutral-400 transition text-left">
+                                <div class="flex items-center gap-1.5 mb-0.5">
+                                    <span class="w-3.5 h-3.5 rounded-full bg-[#CFA7A3] shadow-inner border border-black/10"></span>
+                                    <span class="text-[11px] font-bold text-color-deep-black">Rosa</span>
+                                </div>
+                                <span class="text-[9px] text-neutral-400">Empoeirado</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Botão CTA no Desktop e Mobile -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                        <a href="#reserva" class="bg-color-deep-black hover:bg-color-mocha text-white py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-bold text-center transition-all shadow-md flex items-center justify-center gap-2">
+                            <span>Quero Garantir por R$ 97,80</span>
+                            <i class="ph ph-arrow-right font-bold"></i>
+                        </a>
+                        <div class="flex items-center justify-center gap-1.5 text-[11px] text-neutral-500 py-1">
+                            <i class="ph-fill ph-shield-check text-color-mocha text-base"></i>
+                            <span>7 dias para troca após receber</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galeria Dupla Responsiva (Mobile Snap Horizontal / Desktop Grid) -->
+                <div class="lg:col-span-6 order-1 lg:order-2">
+                    <div class="relative bg-gradient-to-b from-eleve-warm to-eleve-sand/40 rounded-3xl sm:rounded-[2.5rem] p-3 sm:p-5 border border-eleve-border editorial-shadow">
+                        
+                        <div class="flex items-center justify-between mb-2.5 px-1">
+                            <span class="bg-white/95 text-color-deep-black text-[9px] sm:text-[10px] tracking-wider uppercase font-bold px-2.5 py-1 rounded-full border border-eleve-border flex items-center gap-1">
+                                <i class="ph ph-tag text-color-mocha"></i>
+                                R$ 97,80 Unitário
+                            </span>
+                            <span class="bg-color-mocha text-white text-[9px] sm:text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider flex items-center gap-1">
+                                <i class="ph ph-gift"></i>
+                                + 1 Scrunchie
+                            </span>
+                        </div>
+
+                        <!-- Galeria Dupla (Scroll suave no celular e grid no tablet/PC) -->
+                        <div class="relative bg-[#F3EFEA] rounded-2xl overflow-hidden border border-[#D9D0C5] p-1.5 sm:p-2 shadow-sm">
+                            <div class="flex sm:grid sm:grid-cols-2 gap-2 overflow-x-auto snap-x snap-mandatory no-scrollbar">
+                                
+                                <!-- Foto 1: Frente -->
+                                <div class="relative shrink-0 w-[82vw] sm:w-auto snap-center rounded-xl overflow-hidden bg-[#ECE6DF]">
+                                    <span class="absolute top-2.5 left-2.5 bg-[#171514]/80 backdrop-blur-md text-white text-[9px] font-bold px-2 py-0.5 rounded tracking-wider uppercase z-10">
+                                        Frente • Sem Bojo
+                                    </span>
+                                    <img id="main-product-img-1" 
+                                         src="https://cdn.shopify.com/s/files/1/0854/4993/3029/files/Gemini_Generated_Image_xcm70mxcm70mxcm7.jpg?v=1792773979" 
+                                         alt="Conjunto Éleve - Frente" 
+                                         width="800" 
+                                         height="1000"
+                                         loading="eager"
+                                         class="w-full h-[320px] sm:h-[400px] object-cover transition-opacity duration-300">
+                                </div>
+
+                                <!-- Foto 2: Costas -->
+                                <div class="relative shrink-0 w-[82vw] sm:w-auto snap-center rounded-xl overflow-hidden bg-[#ECE6DF]">
+                                    <span class="absolute top-2.5 left-2.5 bg-[#171514]/80 backdrop-blur-md text-white text-[9px] font-bold px-2 py-0.5 rounded tracking-wider uppercase z-10">
+                                        Costas • Bolso Lateral
+                                    </span>
+                                    <img id="main-product-img-2" 
+                                         src="https://cdn.shopify.com/s/files/1/0854/4993/3029/files/Gemini_Generated_Image_xcm70mxcm70mxcm7.jpg?v=1792773979" 
+                                         alt="Conjunto Éleve - Costas" 
+                                         width="800" 
+                                         height="1000"
+                                         loading="eager"
+                                         class="w-full h-[320px] sm:h-[400px] object-cover transition-opacity duration-300">
+                                </div>
+                            </div>
+                            <div class="sm:hidden text-center text-[10px] text-neutral-400 mt-1.5 flex items-center justify-center gap-1 font-medium">
+                                <i class="ph ph-arrows-left-right"></i> Deslize para ver frente e costas
+                            </div>
+                        </div>
+
+                        <!-- Miniaturas de Alternância Rápida -->
+                        <div class="grid grid-cols-3 gap-2 mt-3">
+                            <button type="button" onclick="selectColor('black')" id="thumb-black" class="p-1.5 sm:p-2 rounded-xl bg-white border-2 border-color-deep-black transition flex items-center gap-2 text-left">
+                                <div class="w-8 h-8 rounded-lg bg-[#171514] flex items-center justify-center text-white text-[11px] font-bold shrink-0">
+                                    🖤
+                                </div>
+                                <div class="overflow-hidden">
+                                    <span class="text-[10px] sm:text-[11px] font-bold block truncate">Preto</span>
+                                    <span class="text-[8px] sm:text-[9px] text-neutral-400 block truncate">Profundo</span>
+                                </div>
+                            </button>
+
+                            <button type="button" onclick="selectColor('mocha')" id="thumb-mocha" class="p-1.5 sm:p-2 rounded-xl bg-white border border-eleve-border hover:border-neutral-400 transition flex items-center gap-2 text-left">
+                                <div class="w-8 h-8 rounded-lg bg-[#5C3D2E] flex items-center justify-center text-white text-[11px] font-bold shrink-0">
+                                    🤎
+                                </div>
+                                <div class="overflow-hidden">
+                                    <span class="text-[10px] sm:text-[11px] font-bold block truncate">Mocha</span>
+                                    <span class="text-[8px] sm:text-[9px] text-neutral-400 block truncate">Marrom</span>
+                                </div>
+                            </button>
+
+                            <button type="button" onclick="selectColor('rose')" id="thumb-rose" class="p-1.5 sm:p-2 rounded-xl bg-white border border-eleve-border hover:border-neutral-400 transition flex items-center gap-2 text-left">
+                                <div class="w-8 h-8 rounded-lg bg-[#CFA7A3] flex items-center justify-center text-white text-[11px] font-bold shrink-0">
+                                    🌸
+                                </div>
+                                <div class="overflow-hidden">
+                                    <span class="text-[10px] sm:text-[11px] font-bold block truncate">Rosa</span>
+                                    <span class="text-[8px] sm:text-[9px] text-neutral-400 block truncate">Empoeirado</span>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER DE TRANSPARÊNCIA: PRAZO & BRINDE -->
+    <section id="prazos" class="py-10 bg-color-mocha-soft border-b border-color-mocha/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+            
+            <div class="text-center max-w-xl mx-auto mb-6 sm:mb-8">
+                <span class="text-[10px] uppercase tracking-[0.2em] text-color-mocha font-bold block mb-1">Como Funciona a Pré-Venda</span>
+                <h3 class="font-serif text-2xl sm:text-3xl text-color-deep-black font-light">Cronograma de Fabricação & Envio</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                
+                <div class="bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-eleve-border/80 shadow-sm flex flex-col justify-between">
+                    <div class="flex items-center gap-3 mb-2.5">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-color-mocha-soft text-color-mocha flex items-center justify-center text-sm sm:text-lg font-bold shrink-0">
+                            1
+                        </div>
+                        <h4 class="text-xs uppercase tracking-wider font-bold text-color-deep-black">Encomenda & Confecção</h4>
+                    </div>
+                    <p class="text-xs text-neutral-600 font-light leading-relaxed">
+                        Seu pedido é enviado para fabricação internacional sob demanda. O prazo de confecção, acabamento e despacho inicial é de <strong>cerca de 15 dias corridos</strong>.
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-eleve-border/80 shadow-sm flex flex-col justify-between">
+                    <div class="flex items-center gap-3 mb-2.5">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-color-mocha-soft text-color-mocha flex items-center justify-center text-sm sm:text-lg font-bold shrink-0">
+                            2
+                        </div>
+                        <h4 class="text-xs uppercase tracking-wider font-bold text-color-deep-black">Trânsito Internacional</h4>
+                    </div>
+                    <p class="text-xs text-neutral-600 font-light leading-relaxed">
+                        Após o despacho internacional, o transporte aéreo até a sua residência leva cerca de 10 dias adicionais. O prazo total estimado é de <strong>cerca de 25 dias para entrega em mãos</strong> com código de rastreamento.
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-eleve-border/80 shadow-sm flex flex-col justify-between">
+                    <div class="flex items-center gap-3 mb-2.5">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-[#25D366]/15 text-[#128C7E] flex items-center justify-center text-sm sm:text-lg font-bold shrink-0">
+                            3
+                        </div>
+                        <h4 class="text-xs uppercase tracking-wider font-bold text-color-deep-black">7 Dias de Garantia</h4>
+                    </div>
+                    <p class="text-xs text-neutral-600 font-light leading-relaxed">
+                        O prazo de <strong>7 dias para troca ou devolução só começa a contar no momento em que a encomenda chega</strong> à sua porta. Atendimento direto e humanizado via WhatsApp.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MANIFESTO EDITORIAL -->
+    <section id="manifesto" class="py-14 sm:py-20 bg-eleve-warm/60 border-b border-eleve-border/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+            
+            <div class="max-w-3xl mb-10 sm:mb-14">
+                <span class="text-[10px] sm:text-xs uppercase tracking-[0.22em] text-color-mocha font-bold block mb-2">Conceito da Coleção</span>
+                <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl text-color-deep-black font-light leading-tight mb-4">
+                    A mulher ÉLEVE não vive apenas na academia. <span class="italic font-normal">Ela vive o mundo.</span>
+                </h2>
+                <p class="text-neutral-600 text-xs sm:text-sm md:text-base leading-relaxed font-light">
+                    Criamos cada peça para acompanhar o seu dia real: do treino matinal ao café rápido, do pilates ao home office e viagens. Peças sem exageros visuais, desenhadas para abraçar o corpo com máxima liberdade.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                <div class="bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-eleve-border/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-9 h-9 rounded-xl bg-eleve-warm flex items-center justify-center text-color-mocha text-lg mb-4">
+                            <i class="ph ph-coffee"></i>
+                        </div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-normal text-color-deep-black mb-2">Do Treino ao Café</h3>
+                        <p class="text-xs text-neutral-600 leading-relaxed font-light">
+                            Combina com blazer oversized, camisa de linho ou trench coat. Visual athleisure minimalista e contemporâneo.
+                        </p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-neutral-400 font-semibold pt-4">Versatilidade Real</span>
+                </div>
+
+                <div class="bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-eleve-border/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-9 h-9 rounded-xl bg-color-dusty-rose-soft flex items-center justify-center text-color-mocha text-lg mb-4">
+                            <i class="ph ph-heart"></i>
+                        </div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-normal text-color-deep-black mb-2">Sem Bojo, Mais Natural</h3>
+                        <p class="text-xs text-neutral-600 leading-relaxed font-light">
+                            Estrutura em tecido duplo encorpado de 280 g/m². Modela e sustenta com naturalidade, sem espumas que dobram na lavagem.
+                        </p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-neutral-400 font-semibold pt-4">Liberdade Absoluta</span>
+                </div>
+
+                <div class="bg-white p-6 sm:p-7 rounded-2xl sm:rounded-3xl border border-eleve-border/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-9 h-9 rounded-xl bg-neutral-100 flex items-center justify-center text-color-deep-black text-lg mb-4">
+                            <i class="ph ph-coat-hanger"></i>
+                        </div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-normal text-color-deep-black mb-2">A Roupa como Estilo</h3>
+                        <p class="text-xs text-neutral-600 leading-relaxed font-light">
+                            Você não veste "só para treinar". Veste-se para se sentir impecável, segura e elegante durante todo o dia.
+                        </p>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-widest text-neutral-400 font-semibold pt-4">Autoestima & Conforto</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO VÍDEO 9:16 (MOBILE COMPATÍVEL) -->
+    <section id="video-piloto" class="py-14 sm:py-20 bg-eleve-bone border-b border-eleve-border/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+                
+                <div class="lg:col-span-6 flex flex-col justify-center order-2 lg:order-1">
+                    <span class="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-color-mocha font-bold block mb-2">Prova Real • Peça Piloto</span>
+                    <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl text-color-deep-black font-light leading-tight mb-4">
+                        Veja o caimento real <br><span class="italic font-normal">em movimento.</span>
+                    </h2>
+                    <p class="text-neutral-600 text-xs sm:text-sm md:text-base leading-relaxed mb-5 font-light">
+                        Nada substitui ver o tecido em ação. Confira o cós anatômico que não enrola, o decote sem bojo firme e o bolso invisível segurando o celular sem balançar.
+                    </p>
+
+                    <div class="space-y-2.5 mb-6 text-xs text-neutral-700">
+                        <div class="flex items-center gap-2.5">
+                            <i class="ph ph-check text-color-mocha font-bold"></i>
+                            <span>Cós alto duplo que permanece no lugar no agachamento</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i class="ph ph-check text-color-mocha font-bold"></i>
+                            <span>Zero transparência sob qualquer iluminação</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i class="ph ph-check text-color-mocha font-bold"></i>
+                            <span>Acompanha 1 Scrunchie na mesma cor do conjunto</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#reserva" class="inline-flex items-center gap-2 bg-color-deep-black hover:bg-color-mocha text-white text-xs uppercase tracking-[0.16em] font-bold py-3.5 px-6 rounded-full transition-all shadow-md">
+                            <span>Quero Esta Modelagem por R$ 97,80</span>
+                            <i class="ph ph-arrow-right font-bold"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 flex justify-center order-1 lg:order-2">
+                    <div class="relative w-full max-w-[280px] sm:max-w-[320px]">
+                        
+                        <div class="absolute -top-3 -right-2 z-20 bg-color-deep-black text-white text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-lg border border-white/10 flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+                            Vídeo Real 9:16
+                        </div>
+
+                        <div class="relative aspect-[9/16] w-full rounded-[2rem] bg-color-deep-black p-2 shadow-xl border-4 border-[#2A2725] overflow-hidden">
+                            <button type="button" onclick="togglePilotAudio()" id="video-sound-btn" class="absolute top-5 right-5 z-20 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white flex items-center justify-center text-sm border border-white/20">
+                                <i id="sound-icon" class="ph ph-speaker-simple-slash"></i>
+                            </button>
+
+                            <video id="pilot-video" 
+                                   class="w-full h-full object-cover rounded-[1.7rem]" 
+                                   playsinline 
+                                   muted 
+                                   loop 
+                                   autoplay 
+                                   poster="https://cdn.shopify.com/videos/c/o/v/9aeec53ace2c423b804eda966c0fb1a0.mp4">
+                                <source src="https://cdn.shopify.com/videos/c/o/v/9aeec53ace2c423b804eda966c0fb1a0.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+
+                            <div class="absolute bottom-4 left-4 right-4 z-10 bg-black/55 backdrop-blur-md p-2.5 rounded-xl border border-white/10 text-white">
+                                <span class="text-[8px] uppercase tracking-widest text-color-mocha block font-bold mb-0.5">Fitting da Peça</span>
+                                <p class="text-[10px] font-light leading-snug">
+                                    Veste conjunto tamanho <strong>P</strong> (Busto: 80cm | Cintura: 62cm | Quadril: 88cm)
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ENGENHARIA TÊXTIL -->
+    <section id="engenharia" class="py-14 sm:py-20 bg-white border-b border-eleve-border/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+                
+                <div class="lg:col-span-5">
+                    <span class="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-color-mocha font-bold block mb-2">Tecnologia Têxtil • Drop 01</span>
+                    <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl text-color-deep-black font-light leading-tight mb-4">
+                        Toque amanteigado e compressão anatômica.
+                    </h2>
+                    <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5 font-light">
+                        Malha circular densa com elastano de alta retenção. Toque aveludado dos dois lados (*double-brushed*) e sustentação pura pelo corte têxtil.
+                    </p>
+
+                    <div class="space-y-3">
+                        <div class="p-3.5 rounded-2xl bg-eleve-bone border border-eleve-border flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-xl bg-color-mocha-soft text-color-mocha flex items-center justify-center text-base shrink-0 mt-0.5">
+                                <i class="ph ph-shield-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-wider font-bold text-color-deep-black mb-0.5">Squat-Proof • Zero Transparência</h4>
+                                <p class="text-[11px] text-neutral-500 font-light leading-snug">
+                                    Gramatura de <strong>280 g/m²</strong>. Opacidade total em agachamentos profundos mesmo na cor Rosa.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="p-3.5 rounded-2xl bg-eleve-bone border border-eleve-border flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-xl bg-color-dusty-rose-soft text-color-charcoal flex items-center justify-center text-base shrink-0 mt-0.5">
+                                <i class="ph ph-sparkle"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-wider font-bold text-color-deep-black mb-0.5">Top Sustentação Livre (Sem Bojo)</h4>
+                                <p class="text-[11px] text-neutral-500 font-light leading-snug">
+                                    Pala dupla anatômica que firma o busto naturalmente sem espumas volumosas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="p-3.5 rounded-2xl bg-eleve-bone border border-eleve-border flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-xl bg-neutral-100 text-color-deep-black flex items-center justify-center text-base shrink-0 mt-0.5">
+                                <i class="ph ph-device-mobile"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-wider font-bold text-color-deep-black mb-0.5">Bolso Lateral na Perna Direita</h4>
+                                <p class="text-[11px] text-neutral-500 font-light leading-snug">
+                                    Ancoragem firme para smartphone grande sem puxar o shorts para baixo na corrida.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-eleve-bone rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-eleve-border editorial-shadow">
+                    <span class="text-[9px] uppercase tracking-widest font-bold text-neutral-400 block mb-1">Technical Specification</span>
+                    <h3 class="font-serif text-2xl text-color-deep-black mb-4">Especificação Drop 01</h3>
+
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="bg-white p-3.5 rounded-xl border border-eleve-border">
+                            <span class="text-[9px] uppercase tracking-widest text-neutral-400 font-bold block mb-0.5">Composição</span>
+                            <span class="font-serif text-xl sm:text-2xl font-bold text-color-deep-black block">78% Poliamida</span>
+                            <span class="text-[11px] text-neutral-500">22% Elastano Premium</span>
+                        </div>
+
+                        <div class="bg-white p-3.5 rounded-xl border border-eleve-border">
+                            <span class="text-[9px] uppercase tracking-widest text-neutral-400 font-bold block mb-0.5">Gramatura</span>
+                            <span class="font-serif text-xl sm:text-2xl font-bold text-color-mocha block">280 GSM</span>
+                            <span class="text-[11px] text-neutral-500">Squat-Proof Opaco</span>
+                        </div>
+
+                        <div class="bg-white p-3.5 rounded-xl border border-eleve-border">
+                            <span class="text-[9px] uppercase tracking-widest text-neutral-400 font-bold block mb-0.5">Top Modelagem</span>
+                            <span class="font-serif text-lg sm:text-xl font-bold text-color-deep-black block">Sem Bojo</span>
+                            <span class="text-[11px] text-neutral-500">Tecido Duplo Firme</span>
+                        </div>
+
+                        <div class="bg-white p-3.5 rounded-xl border border-eleve-border">
+                            <span class="text-[9px] uppercase tracking-widest text-neutral-400 font-bold block mb-0.5">Brinde Incluso</span>
+                            <span class="font-serif text-lg sm:text-xl font-bold text-color-mocha block">Scrunchie</span>
+                            <span class="text-[11px] text-neutral-500">Na mesma cor</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-white border border-eleve-border flex items-center justify-between gap-3">
+                        <div>
+                            <span class="text-[9px] uppercase tracking-widest font-bold text-color-mocha block mb-0.5">Garantia & Confiança</span>
+                            <p class="text-xs text-neutral-600 font-light">
+                                Prazo de 7 dias para devolução ou troca direto no nosso WhatsApp.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5500000000000" target="_blank" class="shrink-0 bg-[#25D366] text-white p-2.5 rounded-full hover:scale-105 transition shadow-sm">
+                            <i class="ph-fill ph-whatsapp-logo text-xl"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONFIGURADOR DE PRÉ-VENDA (APENAS P, M, G & MOBILE CLEAN) -->
+    <section id="reserva" class="py-16 sm:py-24 bg-eleve-bone">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+            
+            <div class="text-center max-w-xl mx-auto mb-10">
+                <span class="text-[10px] sm:text-xs uppercase tracking-[0.22em] text-color-mocha font-bold block mb-1.5">LOTE LIMITADO DE LANÇAMENTO</span>
+                <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl text-color-deep-black mb-2 font-light">Reserve Seu Conjunto ÉLEVE</h2>
+                <p class="text-neutral-500 text-xs sm:text-sm font-light">
+                    Fabricação internacional sob demanda (~15 dias confecção + trânsito = ~25 dias totais). <strong>Brinde incluso em todos os kits.</strong>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+                
+                <!-- Coluna de Seleção dos Kits -->
+                <div class="lg:col-span-7 space-y-3.5">
+                    
+                    <!-- OPÇÃO 1: Kit Solo (R$ 97,80 - Frete Calculado no Checkout) -->
+                    <div onclick="selectKitTier('solo')" id="tier-card-solo" class="cursor-pointer bg-white p-4 sm:p-6 rounded-2xl sm:rounded-3xl border-2 border-eleve-border transition-all">
+                        <div class="flex items-center justify-between gap-2">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <input type="radio" name="kit_tier" id="radio-solo" class="accent-color-deep-black h-4 w-4 shrink-0">
+                                <div>
+                                    <div class="flex flex-wrap items-center gap-1.5">
+                                        <h4 class="font-serif text-lg sm:text-xl font-medium text-color-deep-black">Kit Solo (1 Conjunto)</h4>
+                                        <span class="text-[8px] sm:text-[9px] uppercase tracking-wider font-bold bg-neutral-100 text-neutral-600 px-2 py-0.5 rounded-full">+ 1 Scrunchie</span>
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-neutral-500">Top sem bojo + Shorts bolso lateral • Frete calculado no CEP</p>
+                                </div>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span class="text-[11px] text-neutral-400 line-through block">R$ 189,00</span>
+                                <span class="font-serif text-xl sm:text-2xl font-bold text-color-deep-black">R$ 97,80</span>
+                            </div>
+                        </div>
+
+                        <!-- Opções Solo (P, M, G) -->
+                        <div id="solo-options-box" class="mt-4 pt-4 border-t border-eleve-sand hidden">
+                            <div class="mb-3.5">
+                                <label class="text-[10px] uppercase tracking-wider font-bold text-neutral-500 block mb-1.5">1. Escolha a Cor:</label>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <button type="button" onclick="setSoloColor('black', this)" class="btn-solo-color py-2 px-2.5 rounded-xl border-2 border-color-deep-black bg-eleve-bone text-xs font-semibold flex items-center justify-center gap-1.5">
+                                        <span class="w-3 h-3 rounded-full bg-[#171514] shrink-0"></span> Preto
+                                    </button>
+                                    <button type="button" onclick="setSoloColor('mocha', this)" class="btn-solo-color py-2 px-2.5 rounded-xl border border-eleve-border bg-white text-xs font-semibold flex items-center justify-center gap-1.5">
+                                        <span class="w-3 h-3 rounded-full bg-[#5C3D2E] shrink-0"></span> Mocha
+                                    </button>
+                                    <button type="button" onclick="setSoloColor('rose', this)" class="btn-solo-color py-2 px-2.5 rounded-xl border border-eleve-border bg-white text-xs font-semibold flex items-center justify-center gap-1.5">
+                                        <span class="w-3 h-3 rounded-full bg-[#CFA7A3] shrink-0"></span> Rosa
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="text-[10px] uppercase tracking-wider font-bold text-neutral-500 block mb-1.5">2. Escolha o Tamanho:</label>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <button type="button" onclick="setSoloSize('P', this)" class="btn-solo-sz py-2 rounded-xl border border-eleve-border bg-white text-xs font-bold">
+                                        P <span class="block text-[8px] font-normal text-neutral-400">36-38</span>
+                                    </button>
+                                    <button type="button" onclick="setSoloSize('M', this)" class="btn-solo-sz py-2 rounded-xl border-2 border-color-deep-black bg-white text-xs font-bold">
+                                        M <span class="block text-[8px] font-normal text-neutral-400">40-42</span>
+                                    </button>
+                                    <button type="button" onclick="setSoloSize('G', this)" class="btn-solo-sz py-2 rounded-xl border border-eleve-border bg-white text-xs font-bold">
+                                        G <span class="block text-[8px] font-normal text-neutral-400">44-46</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OPÇÃO 2: Kit Duo Lifestyle (Frete Grátis) -->
+                    <div onclick="selectKitTier('duo')" id="tier-card-duo" class="cursor-pointer bg-white p-4 sm:p-6 rounded-2xl sm:rounded-3xl border-2 border-color-mocha relative transition-all shadow-md">
+                        <span class="absolute -top-2.5 right-6 bg-color-mocha text-white text-[8px] sm:text-[9px] uppercase font-bold tracking-widest px-2.5 py-0.5 rounded-full shadow-sm flex items-center gap-1">
+                            <i class="ph-fill ph-crown"></i>
+                            Mais Vendido • Frete Grátis
+                        </span>
+                        
+                        <div class="flex items-center justify-between gap-2">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <input type="radio" name="kit_tier" id="radio-duo" checked class="accent-color-mocha h-4 w-4 shrink-0">
+                                <div>
+                                    <div class="flex flex-wrap items-center gap-1.5">
+                                        <h4 class="font-serif text-lg sm:text-xl font-medium text-color-deep-black">Kit Duo (2 Conjuntos)</h4>
+                                        <span class="text-[8px] sm:text-[9px] uppercase tracking-wider font-bold bg-color-mocha/10 text-color-mocha px-2 py-0.5 rounded-full">+ 2 Scrunchies</span>
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-neutral-500">Sai a R$ 88,50 por conjunto • Frete Grátis Incluso</p>
+                                </div>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span class="text-[11px] text-neutral-400 line-through block">R$ 378,00</span>
+                                <span class="font-serif text-xl sm:text-2xl font-bold text-color-mocha">R$ 177,00</span>
+                            </div>
+                        </div>
+
+                        <!-- Opções Duo -->
+                        <div id="duo-options-box" class="mt-4 pt-4 border-t border-eleve-sand space-y-3">
+                            <div class="bg-eleve-warm/70 p-3 sm:p-3.5 rounded-xl border border-eleve-border">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-[11px] font-bold text-color-deep-black">Conjunto 01:</span>
+                                    <span id="duo-c1-tag" class="text-[10px] font-semibold text-color-mocha">Preto Profundo (M)</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <select onchange="updateDuoCustom(1)" id="duo-color-1" class="text-xs p-2 rounded-lg border border-eleve-border bg-white text-color-deep-black font-medium">
+                                        <option value="black" selected>Preto Profundo</option>
+                                        <option value="mocha">Marrom Mocha</option>
+                                        <option value="rose">Rosa Empoeirado</option>
+                                    </select>
+                                    <select onchange="updateDuoCustom(1)" id="duo-size-1" class="text-xs p-2 rounded-lg border border-eleve-border bg-white text-color-deep-black font-medium">
+                                        <option value="P">Tam: P (36-38)</option>
+                                        <option value="M" selected>Tam: M (40-42)</option>
+                                        <option value="G">Tam: G (44-46)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="bg-eleve-warm/70 p-3 sm:p-3.5 rounded-xl border border-eleve-border">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-[11px] font-bold text-color-deep-black">Conjunto 02:</span>
+                                    <span id="duo-c2-tag" class="text-[10px] font-semibold text-color-mocha">Marrom Mocha (M)</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <select onchange="updateDuoCustom(2)" id="duo-color-2" class="text-xs p-2 rounded-lg border border-eleve-border bg-white text-color-deep-black font-medium">
+                                        <option value="black">Preto Profundo</option>
+                                        <option value="mocha" selected>Marrom Mocha</option>
+                                        <option value="rose">Rosa Empoeirado</option>
+                                    </select>
+                                    <select onchange="updateDuoCustom(2)" id="duo-size-2" class="text-xs p-2 rounded-lg border border-eleve-border bg-white text-color-deep-black font-medium">
+                                        <option value="P">Tam: P (36-38)</option>
+                                        <option value="M" selected>Tam: M (40-42)</option>
+                                        <option value="G">Tam: G (44-46)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OPÇÃO 3: Kit Trio Coleção Completa -->
+                    <div onclick="selectKitTier('trio')" id="tier-card-trio" class="cursor-pointer bg-white p-4 sm:p-6 rounded-2xl sm:rounded-3xl border-2 border-eleve-border transition-all">
+                        <div class="flex items-center justify-between gap-2">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <input type="radio" name="kit_tier" id="radio-trio" class="accent-color-deep-black h-4 w-4 shrink-0">
+                                <div>
+                                    <div class="flex flex-wrap items-center gap-1.5">
+                                        <h4 class="font-serif text-lg sm:text-xl font-medium text-color-deep-black">Trio Coleção Completa</h4>
+                                        <span class="text-[8px] sm:text-[9px] uppercase tracking-wider font-bold bg-neutral-100 text-neutral-600 px-2 py-0.5 rounded-full">+ 3 Scrunchies</span>
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-neutral-500">Sai a R$ 83,00 cada • As 3 cores • Frete Grátis</p>
+                                </div>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <span class="text-[11px] text-neutral-400 line-through block">R$ 567,00</span>
+                                <span class="font-serif text-xl sm:text-2xl font-bold text-color-deep-black">R$ 249,00</span>
+                            </div>
+                        </div>
+
+                        <!-- Opções Trio (P, M, G) -->
+                        <div id="trio-options-box" class="mt-4 pt-4 border-t border-eleve-sand hidden space-y-2.5">
+                            <p class="text-[11px] text-neutral-500">Defina os tamanhos de cada cor:</p>
+                            
+                            <div class="grid grid-cols-3 gap-2">
+                                <div class="bg-eleve-warm/70 p-2.5 rounded-xl border border-eleve-border text-center">
+                                    <span class="text-[9px] font-bold block mb-1">🖤 Preto</span>
+                                    <select onchange="updateTrioSizes()" id="trio-size-black" class="text-xs p-1.5 w-full rounded-lg bg-white border border-eleve-border font-semibold">
+                                        <option value="P">P</option>
+                                        <option value="M" selected>M</option>
+                                        <option value="G">G</option>
+                                    </select>
+                                </div>
+
+                                <div class="bg-eleve-warm/70 p-2.5 rounded-xl border border-eleve-border text-center">
+                                    <span class="text-[9px] font-bold block mb-1">🤎 Mocha</span>
+                                    <select onchange="updateTrioSizes()" id="trio-size-mocha" class="text-xs p-1.5 w-full rounded-lg bg-white border border-eleve-border font-semibold">
+                                        <option value="P">P</option>
+                                        <option value="M" selected>M</option>
+                                        <option value="G">G</option>
+                                    </select>
+                                </div>
+
+                                <div class="bg-eleve-warm/70 p-2.5 rounded-xl border border-eleve-border text-center">
+                                    <span class="text-[9px] font-bold block mb-1">🌸 Rosa</span>
+                                    <select onchange="updateTrioSizes()" id="trio-size-rose" class="text-xs p-1.5 w-full rounded-lg bg-white border border-eleve-border font-semibold">
+                                        <option value="P">P</option>
+                                        <option value="M" selected>M</option>
+                                        <option value="G">G</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Resumo e Botão Shopify -->
+                <div class="lg:col-span-5 bg-white p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-eleve-border editorial-shadow lg:sticky lg:top-24">
+                    <span class="text-[9px] uppercase tracking-widest font-bold text-neutral-400 block mb-1.5">Resumo da Reserva</span>
+                    
+                    <h3 id="checkout-summary-title" class="font-serif text-xl sm:text-2xl font-normal text-color-deep-black mb-0.5">Kit Duo Lifestyle</h3>
+                    <p id="checkout-summary-desc" class="text-xs text-neutral-500 mb-4">2 Conjuntos + 2 Scrunchies de Brinde</p>
+
+                    <div class="space-y-2.5 pb-4 border-b border-eleve-sand text-xs text-neutral-600">
+                        <div class="flex justify-between">
+                            <span>Preço Regular:</span>
+                            <span id="checkout-original-price" class="line-through text-neutral-400">R$ 378,00</span>
+                        </div>
+                        <div class="flex justify-between text-color-mocha font-semibold">
+                            <span>Desconto de Pré-Venda:</span>
+                            <span id="checkout-discount-badge">- R$ 201,00 (53% OFF)</span>
+                        </div>
+                        <div class="flex justify-between items-center text-color-deep-black font-medium">
+                            <span class="flex items-center gap-1">
+                                <i class="ph ph-gift text-color-mocha"></i>
+                                Brinde Incluso:
+                            </span>
+                            <span id="checkout-gift-desc" class="font-semibold text-color-mocha">2 Scrunchies Combinando</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Frete:</span>
+                            <span id="checkout-shipping-badge" class="font-semibold text-color-deep-black">Grátis (Benefício do Duo)</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-0.5 text-[11px] text-neutral-500">
+                            <span>Prazo em Mãos:</span>
+                            <span class="font-medium text-color-deep-black">~25 dias (Produção Internacional)</span>
+                        </div>
+                    </div>
+
+                    <div class="py-4 flex items-baseline justify-between">
+                        <span class="text-xs uppercase tracking-wider text-neutral-400 font-bold">Total:</span>
+                        <div class="text-right">
+                            <span id="checkout-final-price" class="font-serif text-2xl sm:text-4xl font-bold text-color-deep-black">R$ 177,00</span>
+                            <span class="block text-[10px] sm:text-[11px] text-neutral-400">ou em até 6x no cartão</span>
+                        </div>
+                    </div>
+
+                    <a id="shopify-checkout-btn" 
+                       href="#" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="w-full bg-color-deep-black hover:bg-color-mocha text-white py-3.5 sm:py-4 px-6 rounded-full font-bold text-xs uppercase tracking-[0.16em] transition duration-300 shadow-xl flex items-center justify-center gap-2 group">
+                        <span>FINALIZAR PEDIDO</span>
+                        <i class="ph ph-arrow-right font-bold text-base transition-transform group-hover:translate-x-1"></i>
+                    </a>
+
+                    <div class="mt-4 space-y-2 text-[11px] text-neutral-600">
+                        <div class="flex items-center gap-2">
+                            <i class="ph-fill ph-airplane-tilt text-color-mocha shrink-0"></i>
+                            <span>15 dias confecção + trânsito (~25 dias totais).</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="ph-fill ph-shield-check text-color-mocha shrink-0"></i>
+                            <span>7 dias de garantia contados após a chegada.</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="ph-fill ph-whatsapp-logo text-[#25D366] shrink-0"></i>
+                            <span>Dúvidas? <a href="https://wa.me/5500000000000?text=Olá,%20tenho%20dúvidas%20sobre%20a%20pré-venda%20da%20ÉLEVE" target="_blank" class="underline font-semibold text-color-deep-black">Fale no WhatsApp</a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ EXPANSÍVEL -->
+    <section id="faq" class="py-14 sm:py-20 max-w-4xl mx-auto px-4 sm:px-8">
+        <div class="text-center mb-10">
+            <span class="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-neutral-400 font-bold block mb-1.5">Transparência Total</span>
+            <h2 class="font-serif text-2xl sm:text-4xl text-color-deep-black font-light">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="space-y-3">
+            <div class="bg-white rounded-2xl border border-eleve-border overflow-hidden">
+                <button type="button" onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-medium text-color-deep-black text-xs sm:text-sm">
+                    <span>Por que o prazo total é de aproximadamente 25 dias?</span>
+                    <i class="ph ph-plus text-color-mocha text-base transition-transform shrink-0 ml-2"></i>
+                </button>
+                <div class="faq-body max-h-0 overflow-hidden px-4 sm:px-5 text-xs text-neutral-500 leading-relaxed font-light">
+                    <div class="pb-4 border-t border-eleve-sand pt-2.5">
+                        Por se tratar de uma <strong>pré-venda oficial com fabricação internacional sob demanda</strong>, cada peça é confeccionada exclusivamente para o seu pedido. O processo de tecelagem, montagem, acabamento e despacho internacional leva <strong>cerca de 15 dias corridos</strong>. Após o envio, o transporte até o seu endereço leva cerca de 10 dias adicionais, somando um <strong>prazo total de cerca de 25 dias para estar em suas mãos</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-eleve-border overflow-hidden">
+                <button type="button" onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-medium text-color-deep-black text-xs sm:text-sm">
+                    <span>Como funciona a cobrança de frete?</span>
+                    <i class="ph ph-plus text-color-mocha text-base transition-transform shrink-0 ml-2"></i>
+                </button>
+                <div class="faq-body max-h-0 overflow-hidden px-4 sm:px-5 text-xs text-neutral-500 leading-relaxed font-light">
+                    <div class="pb-4 border-t border-eleve-sand pt-2.5">
+                        No <strong>Kit Solo (1 conjunto por R$ 97,80)</strong>, o frete é calculado de acordo com o seu CEP na finalização de compra da Shopify. Para compras a partir de 2 conjuntos (<strong>Kit Duo</strong> ou <strong>Kit Trio</strong>), o frete é 100% bonificado e gratuito como benefício do lançamento.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-eleve-border overflow-hidden">
+                <button type="button" onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-medium text-color-deep-black text-xs sm:text-sm">
+                    <span>O top vem com bojo?</span>
+                    <i class="ph ph-plus text-color-mocha text-base transition-transform shrink-0 ml-2"></i>
+                </button>
+                <div class="faq-body max-h-0 overflow-hidden px-4 sm:px-5 text-xs text-neutral-500 leading-relaxed font-light">
+                    <div class="pb-4 border-t border-eleve-sand pt-2.5">
+                        Não. Esta coleção é 100% <strong>sem bojo</strong>. O top foi desenvolvido com tecido duplo estruturado de alta densidade (280 g/m²) e pala anatômica sob o busto, garantindo sustentação natural e modelagem elegante sem o incômodo de espumas que deformam na lavagem.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-eleve-border overflow-hidden">
+                <button type="button" onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-medium text-color-deep-black text-xs sm:text-sm">
+                    <span>Como funciona o prazo de devolução de 7 dias?</span>
+                    <i class="ph ph-plus text-color-mocha text-base transition-transform shrink-0 ml-2"></i>
+                </button>
+                <div class="faq-body max-h-0 overflow-hidden px-4 sm:px-5 text-xs text-neutral-500 leading-relaxed font-light">
+                    <div class="pb-4 border-t border-eleve-sand pt-2.5">
+                        O prazo de <strong>7 dias corridos de garantia só começa a contar no exato dia em que o pedido é entregue na sua casa</strong>. Se desejar trocar a cor, o tamanho ou devolver, basta enviar uma mensagem no WhatsApp do nosso suporte oficial.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-eleve-border overflow-hidden">
+                <button type="button" onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-medium text-color-deep-black text-xs sm:text-sm">
+                    <span>O tecido fica transparente no agachamento?</span>
+                    <i class="ph ph-plus text-color-mocha text-base transition-transform shrink-0 ml-2"></i>
+                </button>
+                <div class="faq-body max-h-0 overflow-hidden px-4 sm:px-5 text-xs text-neutral-500 leading-relaxed font-light">
+                    <div class="pb-6 border-t border-eleve-sand pt-2.5">
+                        Não! Utilizamos tecido circular encorpado de 280 g/m² com teste rigoroso contra transparência (*squat-proof*). Mesmo o tom Rosa Empoeirado mantém cobertura opaca completa sob tensão corporal.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL TABELA DE MEDIDAS (APENAS P, M, G) -->
+    <div id="size-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden">
+        <div class="bg-white w-full max-w-lg rounded-3xl p-5 sm:p-7 border border-eleve-border relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button type="button" onclick="closeSizeGuide()" class="absolute top-4 right-4 text-neutral-400 hover:text-color-deep-black p-1">
+                <i class="ph ph-x text-xl"></i>
+            </button>
+            <span class="text-[9px] uppercase tracking-widest text-color-mocha font-bold block mb-1">Guia de Caimento</span>
+            <h3 class="font-serif text-2xl text-color-deep-black mb-1.5">Tabela de Medidas (cm)</h3>
+            <p class="text-xs text-neutral-500 mb-4 font-light">Medidas da peça em repouso (não esticada):</p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs border-collapse">
+                    <thead>
+                        <tr class="border-b border-eleve-sand font-semibold text-color-deep-black">
+                            <th class="py-2">Medida</th>
+                            <th class="py-2">P (36-38)</th>
+                            <th class="py-2">M (40-42)</th>
+                            <th class="py-2">G (44-46)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-neutral-600 divide-y divide-eleve-sand/70 text-[11px] sm:text-xs">
+                        <tr>
+                            <td class="py-2 font-bold text-color-deep-black">Top — Busto em repouso</td>
+                            <td class="py-2">80 cm</td>
+                            <td class="py-2">86 cm</td>
+                            <td class="py-2">92 cm</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-bold text-color-deep-black">Top — Faixa sob o busto</td>
+                            <td class="py-2">62 cm</td>
+                            <td class="py-2">68 cm</td>
+                            <td class="py-2">74 cm</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-bold text-color-deep-black">Top — Comprimento frontal</td>
+                            <td class="py-2">28 cm</td>
+                            <td class="py-2">29 cm</td>
+                            <td class="py-2">30 cm</td>
+                        </tr>
+                        <tr class="bg-eleve-warm/40">
+                            <td class="py-2 font-bold text-color-deep-black">Shorts — Cintura</td>
+                            <td class="py-2">62 cm</td>
+                            <td class="py-2">68 cm</td>
+                            <td class="py-2">74 cm</td>
+                        </tr>
+                        <tr class="bg-eleve-warm/40">
+                            <td class="py-2 font-bold text-color-deep-black">Shorts — Quadril</td>
+                            <td class="py-2">88 cm</td>
+                            <td class="py-2">94 cm</td>
+                            <td class="py-2">100 cm</td>
+                        </tr>
+                        <tr class="bg-eleve-warm/40">
+                            <td class="py-2 font-bold text-color-deep-black">Shorts — Entrepernas</td>
+                            <td class="py-2">18 cm</td>
+                            <td class="py-2">19 cm</td>
+                            <td class="py-2">20 cm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-4 p-3 bg-eleve-bone rounded-xl text-[11px] text-neutral-600 leading-relaxed border border-eleve-sand">
+                <strong class="text-color-deep-black block mb-0.5">Dica de Escolha:</strong>
+                Se veste 36-38 escolha o **P**. Para 40-42 opte pelo **M**. Se veste 44-46 selecione o **G**.
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY BOTTOM BAR NO MOBILE (CONVERSÃO RÁPIDA) -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-eleve-border p-3 flex items-center justify-between shadow-2xl">
+        <div>
+            <span class="text-[9px] uppercase tracking-wider text-neutral-400 block font-bold">Valor Atual:</span>
+            <span id="mobile-sticky-price" class="font-serif text-xl font-bold text-color-deep-black">R$ 177,00</span>
+        </div>
+        <a href="#reserva" class="bg-color-deep-black text-white text-xs uppercase tracking-wider font-bold py-2.5 px-5 rounded-full flex items-center gap-1.5 shadow-md">
+            <span>Garantir Peças</span>
+            <i class="ph ph-arrow-right font-bold"></i>
+        </a>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-color-deep-black text-eleve-bone pt-12 pb-8 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8 text-center sm:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 pb-8 border-b border-white/10 items-center">
+                <div class="md:col-span-6">
+                    <span class="font-serif text-2xl tracking-[0.22em] uppercase font-light block mb-2 text-white">
+                        ÉLEVE<span class="text-color-mocha">.</span>
+                    </span>
+                    <p class="text-xs text-neutral-400 font-light leading-relaxed max-w-sm mx-auto sm:mx-0">
+                        Do treino ao café. A roupa fitness pensada como elemento central do seu estilo diário.
+                    </p>
+                </div>
+                <div class="md:col-span-6 flex flex-col sm:items-end justify-center">
+                    <span class="text-[10px] uppercase tracking-widest text-color-mocha font-semibold mb-1">Canal de Atendimento Oficial</span>
+                    <a href="https://wa.me/5500000000000" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-white hover:text-[#25D366] transition justify-center">
+                        <i class="ph-fill ph-whatsapp-logo text-base text-[#25D366]"></i>
+                        <span>Fale conosco pelo WhatsApp (Trocas & Suporte)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[10px] text-neutral-500 gap-3">
+                <p>© 2026 ÉLEVE Moda Fitness. Pré-venda sob demanda.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:underline">Políticas de Devolução (7 Dias)</a>
+                    <a href="#" class="hover:underline">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LÓGICA JAVASCRIPT & SHOPIFY CHECKOUT -->
+    <script>
+        const SHOPIFY_STORE_DOMAIN = 'elevefitshop.myshopify.com';
+
+        // VARIANT_IDS DA SHOPIFY (Grade P, M, G)
+        const SHOPIFY_VARIANT_IDS = {
+            black: {
+                P: '67852759171301',
+                M: '67852759204069',
+                G: '67852759236837'
+            },
+            mocha: {
+                P: '67877834916069',
+                M: '67877834948837',
+                G: '67877834981605'
+            },
+            rose: {
+                P: '67852759072997',
+                M: '67852759105765',
+                G: '67852759138533'
+            }
+        };
+
+        const COLORS_DATA = {
+            black: {
+                name: 'Preto Profundo',
+                hex: '#171514',
+                role: 'Warm Black',
+                img1: 'https://cdn.shopify.com/s/files/1/0854/4993/3029/files/Retrato_atletico_em_preto_minimalista.png?v=1792960741',
+                img2: 'https://cdn.shopify.com/s/files/1/0854/4993/3029/files/Gemini_Generated_Image_mrcp1vmrcp1vmrcp.jpg?v=1792959824'
+            },
+            mocha: {
+                name: 'Marrom Mocha',
+                hex: '#5C3D2E',
+                role: 'Dark Chocolate',
+                img1: 'https://cdn.shopify.com/s/files/1/0854/4993/3029/files/Gemini_Generated_Image_2g25wg2g25wg2g25.jpg?v=1792959182',
+                img2: 'https://cdn.shopify.com/s/files/1/0854/4993/3029/files/Gemini_Generated_Image_92qp1k92qp1k92qp.jpg?v=1792959182'
+            },
+            rose: {
+                name: 'Rosa Empoeirado',
+                hex: '#CFA7A3',
+                role: 'Dusty Rose',
+                img1: 'https://cdn.shopify.com/s/files/1/0854/4993/3029/files/Gemini_Generated_Image_xr3th5xr3th5xr3t.jpg?v=1792959182',
+                img2: 'https://cdn.shopify.com/s/files/1/0854/4993/3029/files/Gemini_Generated_Image_q3gawtq3gawtq3ga.jpg?v=1792959182'
+            }
+        };
+
+        let currentTier = 'duo';
+        let soloColor = 'black';
+        let soloSize = 'M';
+        let duo1 = { color: 'black', size: 'M' };
+        let duo2 = { color: 'mocha', size: 'M' };
+        let trioSizes = { black: 'M', mocha: 'M', rose: 'M' };
+
+        function togglePilotAudio() {
+            const vid = document.getElementById('pilot-video');
+            const icon = document.getElementById('sound-icon');
+            if (vid) {
+                vid.muted = !vid.muted;
+                if (vid.muted) {
+                    icon.classList.replace('ph-speaker-high', 'ph-speaker-simple-slash');
+                } else {
+                    icon.classList.replace('ph-speaker-simple-slash', 'ph-speaker-high');
+                }
+            }
+        }
+
+        function selectColor(colorKey) {
+            const data = COLORS_DATA[colorKey];
+            if (!data) return;
+
+            const img1 = document.getElementById('main-product-img-1');
+            const img2 = document.getElementById('main-product-img-2');
+            
+            if (img1 && img2) {
+                img1.style.opacity = '0.3';
+                img2.style.opacity = '0.3';
+
+                setTimeout(() => {
+                    img1.src = data.img1;
+                    img2.src = data.img2;
+                    img1.style.opacity = '1';
+                    img2.style.opacity = '1';
+                }, 150);
+            }
+
+            document.getElementById('hero-color-label').innerText = data.name;
+            document.getElementById('hero-color-role').innerText = data.role;
+
+            ['black', 'mocha', 'rose'].forEach(c => {
+                const b = document.getElementById(`swatch-btn-${c}`);
+                const thumb = document.getElementById(`thumb-${c}`);
+                if (c === colorKey) {
+                    if (b) {
+                        b.classList.replace('border-eleve-border', 'border-color-deep-black');
+                        b.classList.add('border-2');
+                    }
+                    if (thumb) {
+                        thumb.classList.add('border-2', 'border-color-deep-black');
+                        thumb.classList.remove('border-eleve-border');
+                    }
+                } else {
+                    if (b) {
+                        b.classList.replace('border-color-deep-black', 'border-eleve-border');
+                        b.classList.remove('border-2');
+                    }
+                    if (thumb) {
+                        thumb.classList.remove('border-2', 'border-color-deep-black');
+                        thumb.classList.add('border-eleve-border');
+                    }
+                }
+            });
+        }
+
+        function selectKitTier(tier) {
+            currentTier = tier;
+
+            const cardSolo = document.getElementById('tier-card-solo');
+            const cardDuo = document.getElementById('tier-card-duo');
+            const cardTrio = document.getElementById('tier-card-trio');
+
+            const boxSolo = document.getElementById('solo-options-box');
+            const boxDuo = document.getElementById('duo-options-box');
+            const boxTrio = document.getElementById('trio-options-box');
+
+            [cardSolo, cardDuo, cardTrio].forEach(c => {
+                if (c) {
+                    c.classList.remove('border-color-mocha', 'border-color-deep-black', 'shadow-md');
+                    c.classList.add('border-eleve-border');
+                }
+            });
+            if (boxSolo) boxSolo.classList.add('hidden');
+            if (boxDuo) boxDuo.classList.add('hidden');
+            if (boxTrio) boxTrio.classList.add('hidden');
+
+            document.getElementById('radio-solo').checked = (tier === 'solo');
+            document.getElementById('radio-duo').checked = (tier === 'duo');
+            document.getElementById('radio-trio').checked = (tier === 'trio');
+
+            if (tier === 'solo') {
+                cardSolo.classList.add('border-color-deep-black', 'shadow-md');
+                cardSolo.classList.remove('border-eleve-border');
+                boxSolo.classList.remove('hidden');
+
+                document.getElementById('checkout-summary-title').innerText = 'Kit Solo (1 Conjunto)';
+                document.getElementById('checkout-summary-desc').innerText = `1 Conjunto (${COLORS_DATA[soloColor].name} Tam: ${soloSize}) + 1 Scrunchie de Brinde`;
+                document.getElementById('checkout-original-price').innerText = 'R$ 189,00';
+                document.getElementById('checkout-discount-badge').innerText = '- R$ 91,20 (48% OFF)';
+                document.getElementById('checkout-final-price').innerText = 'R$ 97,80';
+                document.getElementById('mobile-sticky-price').innerText = 'R$ 97,80';
+                document.getElementById('checkout-gift-desc').innerText = '1 Scrunchie na cor do conjunto';
+                document.getElementById('checkout-shipping-badge').innerText = 'Calculado no checkout pelo CEP';
+            } else if (tier === 'duo') {
+                cardDuo.classList.add('border-color-mocha', 'shadow-md');
+                cardDuo.classList.remove('border-eleve-border');
+                boxDuo.classList.remove('hidden');
+
+                document.getElementById('checkout-summary-title').innerText = 'Kit Duo Lifestyle (2 Conjuntos)';
+                document.getElementById('checkout-summary-desc').innerText = `2 Conjuntos (${COLORS_DATA[duo1.color].name} ${duo1.size} + ${COLORS_DATA[duo2.color].name} ${duo2.size}) + 2 Scrunchies`;
+                document.getElementById('checkout-original-price').innerText = 'R$ 378,00';
+                document.getElementById('checkout-discount-badge').innerText = '- R$ 201,00 (53% OFF)';
+                document.getElementById('checkout-final-price').innerText = 'R$ 177,00';
+                document.getElementById('mobile-sticky-price').innerText = 'R$ 177,00';
+                document.getElementById('checkout-gift-desc').innerText = '2 Scrunchies nas cores das peças';
+                document.getElementById('checkout-shipping-badge').innerText = 'Grátis (Benefício do Duo)';
+            } else if (tier === 'trio') {
+                cardTrio.classList.add('border-color-deep-black', 'shadow-md');
+                cardTrio.classList.remove('border-eleve-border');
+                boxTrio.classList.remove('hidden');
+
+                document.getElementById('checkout-summary-title').innerText = 'Coleção Completa Trio (3 Conjuntos)';
+                document.getElementById('checkout-summary-desc').innerText = `3 Cores: Preto (${trioSizes.black}), Mocha (${trioSizes.mocha}), Rosa (${trioSizes.rose}) + 3 Scrunchies`;
+                document.getElementById('checkout-original-price').innerText = 'R$ 567,00';
+                document.getElementById('checkout-discount-badge').innerText = '- R$ 318,00 (56% OFF)';
+                document.getElementById('checkout-final-price').innerText = 'R$ 249,00';
+                document.getElementById('mobile-sticky-price').innerText = 'R$ 249,00';
+                document.getElementById('checkout-gift-desc').innerText = '3 Scrunchies (toda a paleta)';
+                document.getElementById('checkout-shipping-badge').innerText = 'Grátis (Coleção Completa)';
+            }
+
+            updateShopifyCheckoutUrl();
+        }
+
+        function setSoloColor(color, btn) {
+            soloColor = color;
+            document.querySelectorAll('.btn-solo-color').forEach(b => {
+                b.classList.remove('border-2', 'border-color-deep-black');
+                b.classList.add('border-eleve-border');
+            });
+            btn.classList.add('border-2', 'border-color-deep-black');
+            btn.classList.remove('border-eleve-border');
+            selectKitTier('solo');
+        }
+
+        function setSoloSize(size, btn) {
+            soloSize = size;
+            document.querySelectorAll('.btn-solo-sz').forEach(b => {
+                b.classList.remove('border-2', 'border-color-deep-black');
+                b.classList.add('border-eleve-border');
+            });
+            btn.classList.add('border-2', 'border-color-deep-black');
+            btn.classList.remove('border-eleve-border');
+            selectKitTier('solo');
+        }
+
+        function updateDuoCustom(itemNum) {
+            if (itemNum === 1) {
+                duo1.color = document.getElementById('duo-color-1').value;
+                duo1.size = document.getElementById('duo-size-1').value;
+                document.getElementById('duo-c1-tag').innerText = `${COLORS_DATA[duo1.color].name} (${duo1.size})`;
+            } else {
+                duo2.color = document.getElementById('duo-color-2').value;
+                duo2.size = document.getElementById('duo-size-2').value;
+                document.getElementById('duo-c2-tag').innerText = `${COLORS_DATA[duo2.color].name} (${duo2.size})`;
+            }
+            selectKitTier('duo');
+        }
+
+        function updateTrioSizes() {
+            trioSizes.black = document.getElementById('trio-size-black').value;
+            trioSizes.mocha = document.getElementById('trio-size-mocha').value;
+            trioSizes.rose = document.getElementById('trio-size-rose').value;
+            selectKitTier('trio');
+        }
+
+        function updateShopifyCheckoutUrl() {
+            let cartItems = [];
+
+            if (currentTier === 'solo') {
+                const variantId = SHOPIFY_VARIANT_IDS[soloColor][soloSize];
+                cartItems.push(`${variantId}:1`);
+            } else if (currentTier === 'duo') {
+                const var1 = SHOPIFY_VARIANT_IDS[duo1.color][duo1.size];
+                const var2 = SHOPIFY_VARIANT_IDS[duo2.color][duo2.size];
+                cartItems.push(`${var1}:1`);
+                cartItems.push(`${var2}:1`);
+            } else if (currentTier === 'trio') {
+                const varBlack = SHOPIFY_VARIANT_IDS.black[trioSizes.black];
+                const varMocha = SHOPIFY_VARIANT_IDS.mocha[trioSizes.mocha];
+                const varRose = SHOPIFY_VARIANT_IDS.rose[trioSizes.rose];
+                cartItems.push(`${varBlack}:1`);
+                cartItems.push(`${varMocha}:1`);
+                cartItems.push(`${varRose}:1`);
+            }
+
+            const isShopifyHost = window.location.hostname.includes('myshopify.com');
+            const checkoutUrl = isShopifyHost 
+                ? `/cart/${cartItems.join(',')}?attributes[Campanha]=PreVendaDrop01&attributes[Brinde]=ScrunchieInclusa&attributes[Origem]=EncomendaInternacional`
+                : `https://${SHOPIFY_STORE_DOMAIN}/cart/${cartItems.join(',')}?attributes[Campanha]=PreVendaDrop01&attributes[Brinde]=ScrunchieInclusa&attributes[Origem]=EncomendaInternacional`;
+
+            const btn = document.getElementById('shopify-checkout-btn');
+            if (btn) {
+                btn.href = checkoutUrl;
+            }
+        }
+
+        function toggleFaq(btn) {
+            const body = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            const isOpen = body.style.maxHeight && body.style.maxHeight !== '0px';
+
+            document.querySelectorAll('.faq-body').forEach(b => b.style.maxHeight = '0px');
+            document.querySelectorAll('#faq button i').forEach(i => {
+                i.classList.remove('ph-x', 'rotate-45');
+                i.classList.add('ph-plus');
+            });
+
+            if (!isOpen) {
+                body.style.maxHeight = body.scrollHeight + 'px';
+                icon.classList.remove('ph-plus');
+                icon.classList.add('ph-x', 'rotate-45');
+            }
+        }
+
+        function openSizeGuide() {
+            document.getElementById('size-modal').classList.remove('hidden');
+        }
+        function closeSizeGuide() {
+            document.getElementById('size-modal').classList.add('hidden');
+        }
+
+        window.onload = function() {
+            selectKitTier('duo');
+        };
+    </script>
+</body>
+</html>
